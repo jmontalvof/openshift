@@ -10,4 +10,6 @@
       touch /tmp/fichero1.txt
   - name: Copiar un fichero
     ansible.builtin.copy:
-       "src=/tmp/fichero1.txt dest=/tmp/fichero1.txt"
+       src: /tmp/fichero1.txt
+       dest: /tmp/fichero1.txt
+       mode: '0755'
