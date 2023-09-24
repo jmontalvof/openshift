@@ -29,7 +29,10 @@ docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 
 docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.5 --cgroupns=host --name=rocky1 --network=ansible apasoft/rocky9-ansible 
 docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.6 --cgroupns=host --name=rocky2 --network=ansible apasoft/rocky9-ansible 
 docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.8 --cgroupns=host --name=ubuntu1 --network=ansible apasoft/ubuntu22-ansible 
+docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.9 --cgroupns=host --name=ubuntu2 --network=ansible george2025/nginx1
 docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.10 --cgroupns=host --name=mysql1 --network=ansible apasoft/debian11-ansible 
 docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.11 --cgroupns=host --name=mysql2 --network=ansible apasoft/debian11-ansible
 docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.12 --cgroupns=host --name=tomcat1 --network=ansible apasoft/debian11-ansible 
 docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --ip 172.18.0.13 --cgroupns=host --name=tomcat2 --network=ansible apasoft/debian11-ansible 
+
+
